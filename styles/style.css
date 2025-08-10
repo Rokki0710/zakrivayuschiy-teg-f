@@ -37,8 +37,6 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
 }
 
 .header {
