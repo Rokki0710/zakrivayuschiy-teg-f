@@ -178,11 +178,12 @@
   background-color: transparent;
   block-size: 36px;
   inline-size: 36px;
-  outline: none; 
+  outline: none;
 }
 
 .card__like-button .button__text {
   border: 1px solid #000;
+  padding: 0;
 }
 
 .like-icon {
@@ -194,10 +195,6 @@
 
 .card__like-button {
   padding: 8px 35px 4px 36px;
-}
-
-.card__like-button .button__text {
-  padding: 0;
 }
 
 .save__dialog {
