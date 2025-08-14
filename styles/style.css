@@ -15,7 +15,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font, "Inter"), sans-serif;
   font-variation-settings: "wdht" var(--card-main-weidth, 410);
-  background-image: var(
+  /* background-image: var(
     --background-gradient,
     repeating-linear-gradient(
       to right,
@@ -37,12 +37,44 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   max-width: 1440px;
 }
 
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 960px;
+  background-image: var(
+    --background-gradient,
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%)
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
 .header {
-  margin: 100px auto 95px;
   border: 2px solid var(--accent-color, #000);
   padding: var(
       --header-padding-block,
@@ -52,7 +84,7 @@
   background-color: #fff;
   font-family: var(--accent-font, "PressStart2P") , fantasy;
   text-align: center;
-  max-width: 1440px;
+  max-width: 700px;
   margin: 100px auto;
 } 
 
