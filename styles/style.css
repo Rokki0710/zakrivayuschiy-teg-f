@@ -15,7 +15,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font, "Inter"), sans-serif;
   font-variation-settings: "wdht" var(--card-main-weidth, 410);
-  /* background-image: var(
+  background-image: var(
     --background-gradient,
     repeating-linear-gradient(
       to right,
@@ -37,41 +37,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed; */
-  max-width: 1440px;
-}
-
-
-.page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 960px;
-  background-image: var(
-    --background-gradient,
-    repeating-linear-gradient(
-      to right,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%)
-  );
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
 }
 
 .header {
@@ -186,7 +152,10 @@
 }
 
 .button {
+  position: relative;
   background-color: var(--main-color, #fff);
+  border: 2px solid var(--accent-color, #000);
+  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -209,6 +178,7 @@
   background-color: transparent;
   block-size: 36px;
   inline-size: 36px;
+  outline: none; 
 }
 
 .card__like-button .button__text {
@@ -223,11 +193,7 @@
 }
 
 .card__like-text-button {
-  position: relative;
   padding: 8px 35px 4px 36px;
-  background-color: var(--main-color, #fff);
-  border: 2px solid var(--accent-color, #000);
-  transition: box-shadow 0.3s ease;
 }
 
 .card__like-text-button .button__text {
@@ -245,8 +211,6 @@
   padding: 12px 19px;
   white-space: nowrap;
   max-width: 335px;
-  border: 2px solid var(--accent-color, #000);
-  background: var(--main-color, #fff);
 }
 
 .save__dialog .button__text {
@@ -298,9 +262,7 @@
 }
 
 .modal__button {
-  position: relative;
   line-height: 0.9;
-  background-color: var(--main-color, #fff);
   inline-size: 100%;
   padding: 9px 0;
 }
