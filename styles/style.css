@@ -205,10 +205,10 @@
 .save__dialog {
   display: flex;
   align-items: center;
-  gap: 8px; 
+  gap: 8px;
   margin: 40px auto 100px;
-  position: relative; 
-  z-index: 2; 
+  position: relative;
+  z-index: 2;
   margin-block-end: 100px;
   padding: 12px 19px;
   white-space: nowrap;
