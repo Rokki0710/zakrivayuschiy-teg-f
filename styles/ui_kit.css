@@ -16,13 +16,13 @@
   transform: scaleX(0); 
   transform-origin: left; 
   inline-size: 100%; 
-  block-size: 100%; 
+  block-size: 101%; 
 } 
  
 .button:hover::before { 
   transform: scaleX(1); 
 }  
  
-.card__like-button:focus-visible .like-icon { 
+.card__icon-button:focus-visible .like-icon { 
   border-color: var(--accent-color, #000); 
 }

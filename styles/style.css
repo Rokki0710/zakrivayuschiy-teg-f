@@ -169,7 +169,7 @@
   mix-blend-mode: difference;
 }
 
-.card__like-button {
+.card__icon-button {
   grid-column-start: 5;
   justify-self: end;
   margin-inline-end: 8px;
@@ -192,11 +192,11 @@
   transition: border-color 0.4s ease;
 }
 
-.card__like-text-button {
+.card__like-button {
   padding: 8px 35px 4px 36px;
 }
 
-.card__like-text-button .button__text {
+.card__like-button .button__text {
   padding: 0;
 }
 
@@ -204,7 +204,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 40px auto 100px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
   margin-block-end: 100px;
@@ -281,6 +281,7 @@
     flex-direction: column;
     align-items: center;
     padding: 16px 17px 15px;
+    gap: 0;
   }
 
   .button__icon {
