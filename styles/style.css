@@ -190,24 +190,31 @@
   transition: border-color 0.4s ease;
 }
 
-.card__text-button {
+.card__like-text-button {
   position: relative;
-  height: 38px;
-  z-index: 1;
   padding: 8px 35px 4px 36px;
   background-color: var(--main-color, #fff);
+  border: 2px solid var(--accent-color, #000);
   transition: box-shadow 0.3s ease;
 }
 
-.card__text-button .button__text {
+.card__like-text-button .button__text {
   padding: 0;
 }
 
 .save__dialog {
-  position: relative;
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  margin: 40px auto 100px;
+  position: relative; 
+  z-index: 2; 
   margin-block-end: 100px;
   padding: 12px 19px;
+  white-space: nowrap;
+  max-width: 335px;
+  border: 2px solid var(--accent-color, #000);
+  background: var(--main-color, #fff);
 }
 
 .save__dialog .button__text {
