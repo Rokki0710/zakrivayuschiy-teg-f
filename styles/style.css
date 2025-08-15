@@ -194,7 +194,9 @@
 }
 
 .card__like-button {
-  padding: 8px 35px 4px 36px;
+  width: 130px;
+  padding: 8px 0;
+  text-align: center;
 }
 
 .save__dialog {
